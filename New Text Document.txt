@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Giao Diện</title>
+<link rel="stylesheet" type="text/css"  href="css-daodien.css"/>
+<meta charset="utf-8" />
+</head>
+<body>
+	<div id="container">
+    <img id="img1" src="diver2.png" />
+    <img id="img2" src="diver3.png" />
+    <img id="img3" src="diver1.png" />
+    <img  class="fish" id="ca1" src="goldFishSchool.png" />
+    <img  class="fish" id="ca2" src="faintSchool.png" />
+    <img  class="fish" id="ca3"  src="shark.png" />
+    <img class="fish" id="rua" src="turtle.png"/>
+    
+    
+    </div>
+
+</body>
+</html>
