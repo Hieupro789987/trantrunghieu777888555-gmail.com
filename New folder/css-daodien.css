@@ -1,0 +1,143 @@
+@charset "utf-8";
+*{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+body{margin:0;
+padding:0;
+	}
+#container{
+	width:1200px;
+	height:800px;
+	background-image:url(Seabed%20Free%20Vector.jpg);
+	background-position:center;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	overflow: hidden;
+	z-index:2;
+}
+
+
+	
+#img1{
+	width:75px;
+	height:40px;
+	transform: rotate(45deg);
+	position: absolute;
+	top:200px;
+	left:-100px;
+	z-index:1;
+	animation:mymove infinite;
+	animation-duration:20s;
+
+}
+#img2{
+	width:75px;
+	height:40px;
+	transform: rotate(50deg);
+	position: absolute;
+	top:300px;
+	left:-100px;
+	animation:mymove1 16s infinite;
+	animation-delay:1s;
+
+}
+#img3{
+	width:75px;
+	height:40px;
+	transform: rotate(100deg);
+	position: absolute;
+	top:500px;
+	left:-100px;
+	animation:mymove2 20s infinite;
+
+}
+
+@keyframes mymove {
+  0%{left:0px;}
+  25%{ left:300px;}
+   50%{ left:700px ;}
+   75%{top:100px;}
+ 	100%{left: 600px; transform:translateY(200px);}
+}
+
+@keyframes mymove1 {
+	0%  {  left:0px; top:400px }
+	 25%  { left:500px;top:400px; }
+ 	 75% {left:0px ;top:400px; }
+	 100%{ transform: rotateY(180deg);}
+
+}
+
+
+@keyframes mymove2 {
+  0%{left:0px;}
+  25%{ top:500px;}
+   50%{ top:500px ;}
+   75%{left:500px;}
+ 	100%{left: 600px; transform:translateY(300px);transform: rotateY(180deg);}
+}
+
+
+
+
+#ca3 {
+	width:300px;
+	height:100px;
+	position: absolute;
+	top:100px;
+	left:-350px;
+	animation: myca1 20s infinite;
+	 
+
+ 
+}
+@keyframes myca1 {
+	0%  {  left:0px; top:0px }
+	 25%  { left:800px;top:0px; }
+	 5%{ left:200px;top:0px; }
+  	50%  { left:1000px;top:400px; }
+ 	 75% {left:0px ;top:400px; }
+	 100%{ transform: rotateY(180deg);}
+
+}
+#ca2 {
+	width:400px;
+	height:300px;
+	position: absolute;
+	top:150px;
+	left:400px;
+}
+
+#ca1 {
+	width:170px;
+	height:80px;
+	position: absolute;
+	top:100px;
+	left:-170px;
+	animation: myca3 20s infinite;
+	animation-delay:1s;
+}
+@keyframes myca3{
+	0%  {  left:0px; }
+  	50%  { left:1800px; }
+ 	 75% {left:0px ; }
+	 100%{ transform: rotateY(180deg);}
+
+}
+
+#rua {
+	width:200px;
+	height:200px;
+	position:absolute;
+	top:600px;
+	left:700px;
+	animation:rua 12s infinite;
+}
+@keyframes rua{
+	from{ transform:translateX(0px);}
+	to{ transform: translateX(300px);}
+}
